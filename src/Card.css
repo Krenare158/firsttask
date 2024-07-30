@@ -1,0 +1,64 @@
+/* Card.css */
+.card {
+    display: flex;
+    align-items: center;
+    width: 400px;
+    padding: 16px;
+    background-color: white;
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card .icon {
+    font-size: 3em;
+    color: #007bff;
+    margin-right: 16px;
+    border: 2px solid #007bff;
+    border-radius: 50%;
+    padding: 20px;
+    width: 60px; /* width and height set to same value to ensure circle shape */
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .card .text {
+    flex: 1;
+  }
+  
+  .card h2 {
+    margin: 0 0 8px;
+    font-size: 1.2em;
+    color: #333;
+  }
+  
+  .card p {
+    margin: 0;
+    color: #777;
+    font-size: 0.9em;
+  }
+  
+  @media (max-width: 600px) {
+    .card {
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+    }
+  
+    .card .icon {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  
+    .card h2 {
+      font-size: 1em;
+    }
+  
+    .card p {
+      font-size: 0.8em;
+    }
+  }
+  
